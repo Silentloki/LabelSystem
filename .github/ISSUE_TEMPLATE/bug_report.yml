@@ -1,0 +1,24 @@
+name: Bug report / 问题报告
+description: Report a reproducible issue with synthetic or sanitized data.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: OS, Python, dependency versions, CPU/GPU.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps / 复现步骤
+      description: Use synthetic examples. Do not include API keys or private projects.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior / 预期与实际表现
+    validations:
+      required: true
